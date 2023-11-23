@@ -18,18 +18,20 @@ import { Wrapper } from './StyleComponent'
         setGood((prevState) => {
           return prevState + 1
         })
-      //  break
+        break
 
       case 'neutral':
         setNeutral((prevState) => {
           return prevState + 1
         })
-       // break
+        break
       case 'bad':
         setBad((prevState) => {
           return prevState + 1
         })
-       // break
+        break
+      default:
+            return null
     }
   }
   function  countTotalFeedback() {
