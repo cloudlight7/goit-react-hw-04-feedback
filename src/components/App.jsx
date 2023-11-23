@@ -7,7 +7,7 @@ import { Wrapper } from './StyleComponent'
 
 //import React from 'react'
 
- const App = () => {
+export const App = () => {
   const [good, setGood] = useState(0)
   const [neutral, setNeutral] = useState(0)
   const [bad, setBad] = useState(0)
@@ -31,7 +31,7 @@ import { Wrapper } from './StyleComponent'
         })
         break
       default:
-            return null
+      return null
     }
   }
   function  countTotalFeedback() {
@@ -53,4 +53,4 @@ import { Wrapper } from './StyleComponent'
     </Wrapper>
   )
 }
-export default App
+//export default App
